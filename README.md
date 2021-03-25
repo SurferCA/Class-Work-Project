@@ -54,9 +54,9 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 •	Download and Launch Elk Docker Container - This will download and start the sepb/elk:716 container on the Elk machine. Published ports include 5601:Kibana, 9200:Elastic Search, 5044:Filebeat.
 •	Enable Docker System Service on Boot - This tells Docker to enable on boot-up.
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
-
+```
 ![alt text](https://github.com/SurferCA/Class-Work-Project/blob/main/Diagrams/elk_docker_ps1.png)
- 
+ ```diff
 Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 •	Web_1VM 10.0.0.8
