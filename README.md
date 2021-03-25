@@ -26,11 +26,11 @@ The configuration details of each machine may be found below.
 ### **The configuration details of each machine may be found below.**
 | Name             | Function          | IP Address        | Operating System                |
 | -----------------|:-----------------:|:-----------------:|:-------------------------------:|
-| Jumpbox          | Management        | 10.0.0.4/16       | Ubuntu Server (18.04-LTS) Linux |
-| Web1 - DVWA      | WebServer         | 10.0.0.5/16       | Ubuntu Server (18.04-LTS) Linux |
-| Web2 - DVWA      | WebServer         | 10.0.0.6/16       | Ubuntu Server (18.04-LTS) Linux |
-| Web3 - DVWA      | WebServer         | 10.0.0.7/16       | Ubuntu Server (18.04-LTS) Linux |
-| Elk Server       | SysLog            | 10.1.0.4/16       | Ubuntu Server (18.04-LTS) Linux |
+| Jumpbox          | Management        | 10.0.0.4          | Ubuntu Server (18.04-LTS) Linux |
+| Web1 - DVWA      | WebServer         | 10.0.0.8          | Ubuntu Server (18.04-LTS) Linux |
+| Web2 - DVWA      | WebServer         | 10.0.0.9          | Ubuntu Server (18.04-LTS) Linux |
+| Web3 - DVWA      | WebServer         | 10.0.0.11         | Ubuntu Server (18.04-LTS) Linux |
+| Elk Server       | SysLog            | 10.1.0.4          | Ubuntu Server (18.04-LTS) Linux |
 Access Policies
 The virtual machines on the internal network are not exposed to the public Internet.
 Only the Jump Box VM machine can accept connections from the Internet. Access to this machine is only allowed from My Personal workstation IP through private SSH key for security.
