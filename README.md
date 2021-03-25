@@ -36,14 +36,14 @@ The virtual machines on the internal network are not exposed to the public Inter
 Only the Jump Box VM machine can accept connections from the Internet. Access to this machine is only allowed from My Personal workstation IP through private SSH key for security.
 •	The following Machines within the network can only be accessed from the JumpBox IP 10.0.0.4 through SSH.
 o	Web1, Web2, Web3 and ELK stack.
-A summary of the access policies in place can be found in the table below.
-Name	Publicly Accessible	Allowed IP Addresses
-Jump Box	Yes, through SSH	Personal IP, 10.1.0.4, 10.0.0.0/16
-Load Balancer	HTTP Only	Personal IP
-Web1	HTTP Only	10.0.0.4, 10.1.0.4, Personal Public IP:port 80
-Web2	HTTP Only	10.0.0.4, 10.1.0.4, Personal Public IP:port 80
-Web3	HTTP Only	10.0.0.4, 10.1.0.4, Personal Public IP:port 80
-ElkStack	HTTP Only	Personal IP, 10.1.0.4 (HTTP:5601), 10.0.0.4 (Jumpbox SSH)
+### A summary of the access policies in place can be found in the table below.
+| Name                | Publicly Accessible | Allowed IP Addresses    |
+| --------------------|:-------------------:|:-----------------------:|
+| Jump Box            | Yes                 | Prem_Public_IP:22       |
+| Web1 - DVWA         | No                  | N/A                     |
+| Web2 - DVWA         | No                  | N/A                     |
+| Web3 - DVWA         | No                  | N/A                     |
+| Elk-Server/Kibana   | Yes                 | Public_IP:5601          |
 Elk Configuration
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because... Ansible is an 'agent-less' configuration management system that simplifies the setup process for many different network systems. Ansible only needs to be installed on the 'control machine' then by using SSH, the configuration can be quickly and precisly implimented on any target(s) machine. You don’t need to install any other software or firewall ports on the client systems you want to automate. You also don’t have to set up a separate management structure which makes Ansible automation a powerful and excellent choice for simplifing complex tasks.
 *This playbook implements the following tasks:
