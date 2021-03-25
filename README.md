@@ -1,7 +1,6 @@
-```diff
-
 ![alt text](https://github.com/SurferCA/Class-Work-Project/blob/main/Diagrams/Azure_Network.png)
 
+```diff
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible Playbook file may be used to install only certain pieces of it, such as Filebeat.
 
 install_elk.yml
