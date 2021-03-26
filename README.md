@@ -49,7 +49,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-Ansible is an 'agent-less' configuration management system that simplifies the setup process for many different network systems. Ansible only needs to be installed on the 'control machine' then by using SSH, the configuration can be quickly and precisly implimented on any target(s) machine.
+Ansible is an configuration management system that simplifies the setup process for many different network systems. Ansible only needs to be installed on the 'control machine' then by using SSH, the configuration can be quickly and precisly implimented on any target(s) machine.
 
 *This playbook implements the following tasks:
 
